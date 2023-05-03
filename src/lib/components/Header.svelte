@@ -1,8 +1,16 @@
 <script lang="ts">
 	import { drawerOpened } from '$lib/store';
-	import {Icon, Menu} from 'svelte-hero-icons'
+	import { Icon, Menu } from 'svelte-hero-icons';
+
+	let scrollY: number;
 </script>
-<header class="w-full fixed top-0 left-0 flex text-xl text-neutral-50 justify-between p-10 z-20 max-md:p-4">
+
+<svelte:window bind:scrollY />
+<header
+	class="fixed left-0 top-0 z-20 flex w-full justify-between p-10 text-xl text-neutral-50 transition
+		duration-300 ease-in-out max-md:p-4
+{scrollY > 50 ? 'bg-neutral-900' : ''}"
+>
 	<span>
 		<a href="/">Minsu Kim</a>
 	</span>
@@ -12,9 +20,9 @@
 		<a href="/projects">Projects</a>
 		<a href="/about">About</a>
 	</span>
-  <span class="hidden max-md:block">
-    <button on:click={() => drawerOpened.set(true)}>
-      <Icon src={Menu} class="h-6 w-6"/>
-    </button>
-  </span>
+	<span class="hidden max-md:block">
+		<button on:click={() => drawerOpened.set(true)}>
+			<Icon src={Menu} class="h-6 w-6" />
+		</button>
+	</span>
 </header>

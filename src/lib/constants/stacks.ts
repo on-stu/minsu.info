@@ -23,4 +23,24 @@ export const stacks = [
 		name: 'Django',
 		imageUrl: '/logos/django.png',
 	},
+	{
+		name: 'Python',
+		imageUrl: '/logos/python.png',
+	},
+	{
+		name: 'TypeScript',
+		imageUrl: '/logos/typescript.png',
+	},
+	{
+		name: 'Prisma',
+		imageUrl: '/logos/prisma.png',
+	},
+	{
+		name: 'Socket.io',
+		imageUrl: '/logos/socketio.png',
+	},
+	{
+		name: 'TailwindCSS',
+		imageUrl: '/logos/tailwindcss.png',
+	},
 ];
