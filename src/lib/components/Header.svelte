@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { drawerOpened } from '$lib/store';
 	import { Icon, Menu } from 'svelte-hero-icons';
 
@@ -15,10 +16,12 @@
 		<a href="/">Minsu Kim</a>
 	</span>
 	<span class="flex gap-x-4 max-md:hidden">
-		<a href="/career">Career</a>
-		<a href="/posts">Blog</a>
-		<a href="/projects">Projects</a>
-		<a href="/about">About</a>
+		<a href="/careers" class={$page.url.pathname === '/careers' ? 'text-green-600' : ''}>Careers</a>
+		<a href="/posts" class={$page.url.pathname === '/posts' ? 'text-green-600' : ''}>Blog</a>
+		<a href="/projects" class={$page.url.pathname === '/projects' ? 'text-green-600' : ''}
+			>Projects</a
+		>
+		<a href="/about" class={$page.url.pathname === '/about' ? 'text-green-600' : ''}>About</a>
 	</span>
 	<span class="hidden max-md:block">
 		<button on:click={() => drawerOpened.set(true)}>

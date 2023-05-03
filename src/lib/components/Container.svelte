@@ -1,0 +1,5 @@
+<div class="flex w-full justify-center">
+	<div class="w-full max-w-5xl">
+		<slot />
+	</div>
+</div>
