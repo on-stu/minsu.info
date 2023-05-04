@@ -2,10 +2,11 @@
 	import Container from '$lib/components/Container.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
+	import type { PageServerData } from './$types';
 	import Banner from './Banner.svelte';
 	import PostCard from './PostCard.svelte';
 	let isInView: boolean;
-	let posts = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
+	export let data: PageServerData;
 </script>
 
 <Banner />
@@ -23,8 +24,8 @@
 					100
 				)}"
 			>
-				{#each posts as post}
-					<PostCard title="안녕 ㅎㅎ" id={post} />
+				{#each data.posts as post}
+					<PostCard title={post.title} id={post.id} thumbnailImageUrl={post.thumbnailImageUrl} />
 				{/each}
 			</div>
 			<div class="h-[100px]" />
