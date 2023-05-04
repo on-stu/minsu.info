@@ -23,7 +23,7 @@
 			)}"
 		>
 			{#each posts as post}
-				<PostCard />
+				<PostCard title="안녕 ㅎㅎ" id={post} />
 			{/each}
 		</div>
 	</Container>

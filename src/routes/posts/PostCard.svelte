@@ -6,7 +6,7 @@
 	export let title = 'Hello World';
 	export let subtitle = '부제목입니다';
 	export let createdAt = new Date();
-	export let id = 0;
+	export let id: number;
 </script>
 
 <a href="/posts/{id}" class="flex flex-col gap-2">
