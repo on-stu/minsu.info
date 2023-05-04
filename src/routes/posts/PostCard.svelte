@@ -16,7 +16,7 @@
 		class=" aspect-[0.8] w-full rounded-2xl object-cover object-center"
 	/>
 	<div>
-		<h1 class="text-2xl font-bold text-neutral-50">{title}</h1>
+		<h1 class="text-2xl font-bold text-neutral-900">{title}</h1>
 		<p class="text-neutral-500">{subtitle}</p>
 		<p class="text-neutral-500">{formatDate(createdAt)}</p>
 	</div>
