@@ -16,7 +16,7 @@ export async function getPosts() {
 	return posts;
 }
 
-export async function searchPost(query: string) {
+export async function searchPosts(query: string) {
 	const posts = await prismaClient.post.findMany({
 		where: {
 			OR: [{ title: { contains: query } }, { content: { contains: query } }],
