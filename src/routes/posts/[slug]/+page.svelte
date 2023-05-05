@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Container from '$lib/components/Container.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	import { formatDate } from '$lib/utils/format';
 	import type { PageServerData } from './$types';
 
 	export let data: PageServerData;
 </script>
 
+<Seo metaData={{ title: data.title }} />
 <div class="relative">
 	<img
 		src={data.thumbnailImageUrl}

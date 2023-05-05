@@ -1,11 +1,13 @@
 <script lang="ts">
 	import Cta from '$lib/components/CTA.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
 	import Stacks from './Stacks.svelte';
 	let isInView: boolean;
 </script>
 
+<Seo />
 <ScrollDetectContainer bind:isInView>
 	<div class="relative flex h-screen pb-[120px]">
 		<div

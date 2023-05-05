@@ -76,3 +76,21 @@
 		-webkit-text-fill-color: white !important;
 	}
 }
+
+@layer components {
+	.gradient-0 {
+		@apply bg-gradient-to-t from-[#0F2027] via-[#203A43] to-[#2C5364];
+	}
+
+	.gradient-1 {
+		@apply bg-gradient-to-b from-[#373B44] to-[#4286f4];
+	}
+
+	.gradient-2 {
+		@apply bg-gradient-to-b from-[#ad5389] to-[#3c1053];
+	}
+
+	.gradient-3 {
+		@apply bg-gradient-to-b from-[#FF512F] to-[#F09819];
+	}
+}
