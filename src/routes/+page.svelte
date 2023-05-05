@@ -37,9 +37,9 @@
 		<div class="absolute inset-0 flex items-center justify-center max-md:items-end">
 			<Cta />
 			<div
-				class="flex w-full flex-col justify-between bg-gradient-to-t from-neutral-600 to-transparent p-4 pb-[136px] text-neutral-50 max-xs:h-4/5 xs:h-3/5 md:hidden"
+				class="flex w-full flex-col justify-between bg-gradient-to-t from-neutral-600 to-transparent p-4 pb-[136px] text-neutral-50 max-xs:h-full max-xs:justify-end xs:h-3/5 md:hidden"
 			>
-				<div class="flex flex-col">
+				<div class="flex flex-col max-xs:mb-10">
 					<h2 class="mb-4 text-3xl font-bold {fadeFromBottom(isInView)}">풀스택 개발자</h2>
 					<h1 class=" mb-8 text-4xl font-extrabold {fadeFromBottom(isInView, 75)}">김민수</h1>
 					<span class="text-lg font-medium text-neutral-300 {fadeFromBottom(isInView, 100)}"
