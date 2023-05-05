@@ -29,7 +29,7 @@
 		</div>
 		<div class="flex h-full w-1/2 items-end justify-center bg-neutral-800 max-md:w-full">
 			<img
-				src="/images/profile.png"
+				src="/images/profile.webp"
 				alt="profile"
 				class="w-1/2 object-contain max-md:w-full {fadeFromBottom(isInView)}"
 			/>

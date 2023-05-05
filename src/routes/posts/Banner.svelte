@@ -8,7 +8,7 @@
 <ScrollDetectContainer bind:isInView>
 	<div class="relative">
 		<video
-			src="/videos/stars.mp4"
+			src="/videos/stars.webm"
 			autoplay
 			loop
 			muted

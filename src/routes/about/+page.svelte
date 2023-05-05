@@ -1,12 +1,14 @@
 <script lang="ts">
 	import Container from '$lib/components/Container.svelte';
 	import FloatingButton from '$lib/components/FloatingButton.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
 
 	let isInView: boolean;
 </script>
 
+<Seo />
 <div class="relative w-screen bg-black">
 	<ScrollDetectContainer bind:isInView>
 		<Container class=" text-neutral-50 max-md:px-4 {fadeFromBottom(isInView)}">

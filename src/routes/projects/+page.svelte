@@ -18,7 +18,7 @@
 			</p>
 		</div>
 		<ProjectCard
-			mainImage="/images/jjockgo-main.png"
+			mainImage="/images/jjockgo-main.webp"
 			gradientNumber={1}
 			title="쪽고의 모험"
 			links={[
@@ -39,7 +39,7 @@
 		/>
 		<ProjectCard
 			isLeft
-			mainImage="/images/honey-main.png"
+			mainImage="/images/honey-main.webp"
 			gradientNumber={3}
 			title="꿀잼 예능"
 			description="유튜브를 보다 자동으로 영상을 만들어주는 프로그램이 있으면 좋겠다고 생각하여 토이프로젝트로서 해당 프로그램을 만들어보았습니다. 아쉽게도 유튜브 알고리즘의 선택을 받지는 못하였으나 그 과정속에서 비디오 처리하는 법을 많이 배울 수 있었습니다. 유튜브에서 재밌는 예능 쇼츠 영상들이 많이 올라오고 조회수도 높은 것을 보고 원본 유튜브 영상 링크, 제목, 시간만 지정해주면 자동으로 영상을 편집해주는 프로그램을 만들었습니다. python과 moviepy를 사용해 개발했습니다."
@@ -55,7 +55,7 @@
 			]}
 		/>
 		<ProjectCard
-			mainImage="/images/devgate-main.png"
+			mainImage="/images/devgate-main.webp"
 			title="데브게이트"
 			description="개발외주 스타트업 데브게이트의 사이트입니다. 견적 계산기, 문의하기 등 여러 기능들을 만들었고, 스크롤 애니메이션, SEO 등 고도화를 해냈습니다. 처음으로 SvelteKit, TailwindCss를 사용해봤고, 개발 경험이 너무 좋아서 현재까지도 프로젝트를 진행할 땐 해당 스택을 사용합니다. 백엔드는 nestjs를 사용했습니다. 견적 계산기의 결과물로서 pdf 파일을 다운로드 받을 수 있도록 구현했습니다. 즉, pdf 파일을 만들어 주는 로직도 처리해보았는데 나름 재밌는 경험이 되었습니다."
 			links={[
@@ -86,7 +86,7 @@
 			description="캠퍼스 데이트는 같은 대학 내 사람들과 소개팅을 할 수 있게 해주는 데이팅 앱입니다. React Native, Django, socket.io를 사용하여, 취미, 이상형, 성향을 비롯한 자동 매칭 알고리즘, 실시간 채팅 기능, 기타 게시판 기능들을 만들었습니다. 실제 사용되는 서비스 구현을 목적으로 했기 때문에 지금까지 만들던 프로젝트들 중 가장 많은 기능과 내용을 담고 있었고, 그렇기 때문에 앱이 제대로 시행되기 위해서는 기존에 만들었던 프로젝트들 보다 훨씬 더 높은 이해가 필요했고, 코드가 제대로 작성될 필요가 있었습니다. 그러한 과정속에서 React의 useState, useEffect, useMemo, useContext 등의 hook을 통한 lifecycle 관리의 제대로 된 이해를 할 수 있었고, 나아가, fcm, expo push-notification을 통해 푸쉬 알림 기능 구현에 성공했습니다."
 		/>
 		<ProjectCard
-			mainImage="/images/hyeyum-main.png"
+			mainImage="/images/hyeyum-main.webp"
 			gradientNumber={1}
 			links={[
 				{

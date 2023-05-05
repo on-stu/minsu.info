@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Container from '$lib/components/Container.svelte';
 	import FloatingButton from '$lib/components/FloatingButton.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
 	import { careers } from '$lib/constants/careers';
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
@@ -17,6 +18,7 @@
 	];
 </script>
 
+<Seo />
 <div class="relative w-screen">
 	<ScrollDetectContainer bind:isInView>
 		<Container class="relative mt-[100px] flex min-h-screen flex-col text-neutral-50">

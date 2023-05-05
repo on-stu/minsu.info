@@ -13,7 +13,7 @@
 	export let title: string = 'title';
 	export let description: string =
 		'lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel libero euismod, ultricies nisl vitae, aliquam nisl';
-	export let mainImage: string = '/images/campusdate-main.png';
+	export let mainImage: string = '/images/campusdate-main.webp';
 	export let gradientNumber: number = 0;
 
 	function getGradient() {

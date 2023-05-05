@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Container from '$lib/components/Container.svelte';
+	import Seo from '$lib/components/SEO.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
 	import type { PageServerData } from './$types';
@@ -9,6 +10,7 @@
 	export let data: PageServerData;
 </script>
 
+<Seo />
 <Banner />
 <div class="w-full bg-neutral-200">
 	<ScrollDetectContainer bind:isInView>
