@@ -12,19 +12,12 @@
 			goto(`/posts/?q=${searchQuery}`);
 		}
 	}
-	// check device is ios
-	const isIOS = () => {
-		if (typeof window !== 'undefined' && window.navigator) {
-			return /iPad|iPhone|iPod/.test(window.navigator.userAgent) && !window.MSStream;
-		}
-		return false;
-	};
 </script>
 
 <ScrollDetectContainer bind:isInView>
 	<div class="relative">
 		<video
-			src={isIOS() ? '/videos/stars.mp4' : '/videos/stars.webm'}
+			src="/videos/stars.mp4"
 			autoplay
 			loop
 			muted

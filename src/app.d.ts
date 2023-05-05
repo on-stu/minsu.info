@@ -9,8 +9,4 @@ declare global {
 	}
 }
 
-declare interface Window {
-	MSStream: any;
-}
-
 export {};
