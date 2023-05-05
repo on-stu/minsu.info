@@ -8,7 +8,7 @@
 <Seo />
 <div class="relative w-screen">
 	<Container
-		class="relative mt-[100px] flex min-h-screen flex-col gap-y-[80px] text-neutral-50 max-md:p-4"
+		class="relative mt-[100px] flex min-h-screen flex-col gap-y-[80px] text-neutral-50 max-md:gap-y-10 max-md:p-4"
 	>
 		<div class="flex flex-col items-center justify-center gap-4">
 			<h1 class="text-4xl font-extrabold text-green-600">My Projects</h1>

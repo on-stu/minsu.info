@@ -63,7 +63,9 @@
 				<span class="text-2xl font-bold text-neutral-50">{title}</span>
 				<img src={mainImage} alt="main" class=" aspect-square w-full rounded-2xl object-contain" />
 				<p class="break-keep text-lg text-neutral-200">{description}</p>
-				<div class="flex w-full flex-col gap-2 {isLeft ? 'items-start' : 'items-end'}">
+				<div
+					class="flex w-full flex-col gap-2 {isLeft ? 'items-start max-md:items-end' : 'items-end'}"
+				>
 					{#each links as link}
 						<a href={link.url} target="_blank" class="flex items-center gap-x-2">
 							<span class="text-lg text-neutral-50 underline">

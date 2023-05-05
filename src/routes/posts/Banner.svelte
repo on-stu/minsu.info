@@ -5,19 +5,26 @@
 	import { fadeFromBottom } from '$lib/utils/scrollDetectionStyle';
 	import { Icon, Search } from 'svelte-hero-icons';
 	let isInView: boolean;
-	let searchQuery = `${$page.url.searchParams.get('q')}` || '';
+	let searchQuery = `${$page.url.searchParams.get('q') ?? ''}`;
 	function search() {
 		if (!searchQuery) goto('/posts');
 		else {
 			goto(`/posts/?q=${searchQuery}`);
 		}
 	}
+	// check device is ios
+	const isIOS = () => {
+		if (typeof window !== 'undefined' && window.navigator) {
+			return /iPad|iPhone|iPod/.test(window.navigator.userAgent) && !window.MSStream;
+		}
+		return false;
+	};
 </script>
 
 <ScrollDetectContainer bind:isInView>
 	<div class="relative">
 		<video
-			src="/videos/stars.webm"
+			src={isIOS() ? '/videos/stars.mp4' : '/videos/stars.webm'}
 			autoplay
 			loop
 			muted
