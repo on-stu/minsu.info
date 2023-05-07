@@ -28,7 +28,12 @@
 				)}"
 			>
 				{#each data.posts as post}
-					<PostCard title={post.title} id={post.id} thumbnailImageUrl={post.thumbnailImageUrl} />
+					<PostCard
+						title={post.title}
+						id={post.id}
+						thumbnailImageUrl={post.thumbnailImageUrl}
+						createdAt={post.createdAt}
+					/>
 				{/each}
 				{#if data.posts.length === 0}
 					<div class="col-span-full flex min-h-[300px] flex-col items-center justify-center">
