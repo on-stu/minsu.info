@@ -10,6 +10,8 @@ export const load: PageServerLoad = async (event) => {
 	if (!compiledResponse?.code) throw error(500, 'Failed to compile post');
 	return {
 		...post,
-		content: compiledResponse.code,
+		content: compiledResponse.code
+			.replace(/>{@html `<code class="language-/g, '><code class="language-')
+			.replace(/<\/code>`}<\/pre>/g, '</code></pre>'),
 	};
 };
