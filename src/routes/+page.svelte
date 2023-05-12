@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_OPEN_CHAT_URL } from '$env/static/public';
 	import Cta from '$lib/components/CTA.svelte';
 	import Seo from '$lib/components/SEO.svelte';
 	import ScrollDetectContainer from '$lib/components/ScrollDetectContainer.svelte';
@@ -53,7 +54,7 @@
 					</span>
 				</div>
 				<a
-					href="https://open.kakao.com/o/sK9sDrif"
+					href={PUBLIC_OPEN_CHAT_URL}
 					target="_blank"
 					class="flex items-center justify-center justify-self-end
 				rounded-2xl bg-green-800 p-4 text-lg

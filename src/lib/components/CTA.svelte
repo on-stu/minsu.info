@@ -1,9 +1,13 @@
+<script lang="ts">
+	import { PUBLIC_OPEN_CHAT_URL } from '$env/static/public';
+</script>
+
 <a
-	href="https://open.kakao.com/o/sK9sDrif"
+	href={PUBLIC_OPEN_CHAT_URL}
 	target="_blank"
-	class="mt-[200px] bg-green-800 w-[120px] h-[120px] rounded-full 
-	transition-all hover:scale-110 flex justify-center items-center shadow-2xl
+	class="mt-[200px] flex h-[120px] w-[120px] items-center
+	justify-center rounded-full bg-green-800 shadow-2xl transition-all hover:scale-110
 	max-md:hidden"
 >
-	<span class="font-bold text-lg text-neutral-100">Contact Me</span>
+	<span class="text-lg font-bold text-neutral-100">Contact Me</span>
 </a>

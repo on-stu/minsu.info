@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { PUBLIC_OPEN_CHAT_URL } from '$env/static/public';
 	import { fade, fly } from 'svelte/transition';
 
 	let scrollY: number;
@@ -11,7 +12,7 @@
 		transition:fade
 	>
 		<a
-			href="https://open.kakao.com/o/sK9sDrif"
+			href={PUBLIC_OPEN_CHAT_URL}
 			target="_blank"
 			class="  z-20 flex h-[120px] w-[120px]
 	items-center justify-center rounded-full bg-green-800 shadow-2xl transition-all
@@ -21,7 +22,7 @@
 			<span class="text-lg font-bold text-neutral-100">Contact Me</span>
 		</a>
 		<a
-			href="https://open.kakao.com/o/sK9sDrif"
+			href={PUBLIC_OPEN_CHAT_URL}
 			target="_blank"
 			transition:fly={{ y: 100, duration: 500 }}
 			class="flex w-full items-center justify-center
