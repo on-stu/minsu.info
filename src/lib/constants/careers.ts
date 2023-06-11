@@ -30,8 +30,15 @@ export const careers = [
 	{
 		title: 'Devgate Software Engineer',
 		startDate: '2023.01',
-		endDate: '현재',
+		endDate: '2023.04',
 		description:
 			'지난 경력을 바탕으로 개발 외주 스타트업 데브게이트에 co-founder이자 software engineer로서 참여하게 되었습니다. 능력있는 개발자, 디자이너, 기획자들 사이에서 개발 이외의 인사이트를 많이 얻을 수 있었습니다. 물론 개발적으로도 큰 성장을 했습니다. 짧은 기간동안 3개 이상의 프로젝트를 성공적으로 마칠 수 있었으며 오로지 혼자 핸들링한 프로젝트도 있습니다.',
+	},
+	{
+		title: 'CodeStation Founder',
+		startDate: '2023.05',
+		endDate: '현재',
+		description:
+			'개발 외주 스타트업 데브게이트에서의 경험을 바탕으로 개발 외주 스타트업 CodeStation을 창업했습니다. 현재는 기획, 디자인, 개발, QA 모두 혼자 진행하고 있습니다. 데브게이트에서의 경험을 바탕으로 더욱 더 성장할 수 있을 것이라고 생각합니다.',
 	},
 ];
